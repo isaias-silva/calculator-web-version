@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'matrix';
+    font-weight: bold;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: yellowgreen
+}
+
+@font-face {
+    font-family: 'matrix';
+    src: url('../fonts/BusMatrixCondensed-Condensed.otf') format('truetype');
+    src: url('../fonts/BusMatrixCondensed-Condensed.ttf') format('truetype');
+    ;
+}
+
+button {
+    border: 1px green solid;
+    background-color: black;
+    color: green;
+    transition: all 0.5s linear;
+    font-size: 15px;
+}
+
+#cont {
+    resize: none;
+    border: 1px dashed green;
+    background-color: black;
+    color: greenyellow;
+    font-size: 30px;
+    transition: all 0.2s linear;
+    width: 350px;
+    height: 60px;
+    letter-spacing: 4px;
+}
+
+#cont::-webkit-scrollbar {
+    display: none;
+}
+
+#tela {
+    width: 100%;
+    margin: auto;
+    max-width: 400px;
+    max-height: 500px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    border: 1px solid green;
+    box-sizing: border-box;
+}
+
+.tellcalc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.tellcalc input {
+    width: 80%;
+    height: 50px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    width: 30%;
+    height: 60px;
+    margin: 2px;
+}
+
+.buttons.numbers {
+    margin: auto;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.buttons.operatings {
+    margin: auto;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.buttons.operatings button {
+    width: 10%;
+    height: 30px;
+}
+
+#calc {
+    width: 60%;
+}
+
+.edit button {
+    width: 100px;
+    height: 20px;
+}
+
+button:hover {
+    background-color: green;
+    color: black;
+    width: 32%;
+    height: 62px;
+}
+
+button:active {
+    background: white;
+}
+
+.edit button:hover {
+    width: 80px;
+    height: 20px;
+}
+
+.footer a {
+    color: green;
+    position: absolute;
+    top: 90vh;
+    display: flex;
+    text-decoration: none;
+    transition: all 0.5s linear;
+    border: 5px solid black;
+    border-radius: 50px;
+    border-style: none none solid none;
+    box-sizing: border-box;
+    width: 100px;
+}
+
+.footer p {
+    transition: all 0.5s linear;
+}
+
+.footer img {
+    width: 50px;
+    transition: all 0.5s linear;
+}
+
+.footer a:hover {
+    border-color: greenyellow;
+    box-shadow: 0 0 12px 0 greenyellow;
+    background-color: greenyellow;
+}
+
+.footer a:hover p {
+    color: rgb(0, 67, 2)
+}
+
+@media screen and (max-width:410px) {
+    #cont {
+        width: 250px;
+    }
+    .buttons.numbers button {
+        font-size: 20px;
+    }
+}

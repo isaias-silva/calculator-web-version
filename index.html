@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+ 
+    <title>calculator</title>
+</head>
+
+<body>
+    <div id="tela">
+        <div class="tellcalc">
+            <h1>calculator</h1>
+
+            <textarea name="cont" id="cont" pattern='\d*'></textarea>
+        </div>
+
+        <div class="buttons operatings">
+            <button value="+" onclick="press(this.value)">+</button>
+            <button value="-" onclick="press(this.value)">-</button>
+            <button value="x" onclick="press(this.value)">&#215;</button>
+            <button value="÷" onclick="press(this.value)">&divide;</button>
+            <button value="^" onclick="press(this.value)">x^</button>
+            <button value="√" onclick="press(this.value)">&radic;</button>
+            <button value="." onclick="press(this.value)">,</button>
+            <button value="(" onclick="press(this.value)">(</button>
+            <button value=")" onclick="press(this.value)">)</button>
+            <button value="%" onclick="press(this.value)">&#37;</button>
+            <button value="π" onclick="press(this.value)">&pi;</button>
+
+        </div>
+        <div class="buttons edit">
+            <button value="cl" onclick="press(this.value)">clear</button>
+            <button value="er" onclick="press(this.value)"> &#8626;</button>
+
+
+        </div>
+
+        <div class="buttons numbers">
+            <button value="1" onclick="press(this.value)">1</button>
+            <button value="2" onclick="press(this.value)">2</button>
+            <button value="3" onclick="press(this.value)">3</button>
+            <button value="4" onclick="press(this.value)">4</button>
+            <button value="5" onclick="press(this.value)">5</button>
+            <button value="6" onclick="press(this.value)">6</button>
+            <button value="7" onclick="press(this.value)">7</button>
+            <button value="8" onclick="press(this.value)">8</button>
+            <button value="9" onclick="press(this.value)">9</button>
+            <button value="0" onclick="press(this.value)">0</button>
+
+            <button value="calc" onclick="press(this.value)" id="calc"> calcular</button>
+
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://github.com/isaias-silva" target="_blank" >
+            <img src="./icon/github.png"> <p> zack black &copy; </p>
+        </a>
+    </div>
+</body>
+<script src="script.js">
+</script>
+
+</html>
