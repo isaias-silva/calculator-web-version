@@ -1,0 +1,118 @@
+//codigo fonte é oque está no script.js porém este não está obfuscado//
+//class calculadora
+class Calculadora {
+    constructor(n) {
+        this.tela = document.getElementById(n)
+    }
+//atributo tela
+    tela
+//metodos
+    clear = function () {
+
+        this.tela.value = ''
+
+    }
+    erase = function () {
+        this.tela.value = (this.tela.value).substring(0, this.tela.value.length - 1)
+    }
+    calc = async function () {
+
+
+        const result = await this.extratmath(this.tela.value)
+        this.tela.value = result;
+    }
+
+
+    extratmath = function (x) {
+        if (x == '03.10.2001') {
+            alert('happy birthday for creator!')
+            return ''
+        } else if (x == '11.09.2001') {
+            alert('sad day')
+            return ''
+        }
+        else if (x == '06.06.1944') {
+            alert("you're going to run on the beach, you're going to fight for freedom!")
+
+            return ''
+        }
+        else if (x == '15.11.1889') {
+            alert("res'pública!")
+
+            return ''
+        }
+        else if (x == '03.02.1975') {
+            alert("❤️❤️❤️❤️❤️PARABÉNS DDZINHA❤️❤️❤️❤️")
+
+            return ''
+        }
+        else {
+            let formated = x.replace('x', '*')
+                .replace('^', '**')
+                .replace('÷', '/')
+                .replace('%', '/100')
+                .replace('π', '3.14')
+               
+
+
+            if (x.includes('√')) {
+                formated = formated.replace('√', 'Math.sqrt(') + ')'
+            }
+
+           
+if(formated.includes('()')||formated.includes('alert')||formated.includes('function')||formated.includes('eval')||formated.includes('console')||formated.includes('document')||formated.includes('calculator')){return 'NaN'}
+
+            let evalformated
+            try {
+                evalformated = eval(formated)
+                
+               
+               
+            } catch (err) {
+                alert(err)
+                return x;
+            }
+            
+            return evalformated
+        }
+    }
+
+}
+//obj principal
+const calculator = new Calculadora('cont')
+
+//função principal
+function press(x) {
+   
+       
+       
+
+    let size = 30
+    if ((calculator.tela.value).length >= 19) {
+        size = 15
+
+    } else if ((calculator.tela.value).length >= 14) {
+        size = 25
+    } else { size = 30 }
+
+    switch (x) {
+        case 'cl':
+            calculator.clear()
+            break
+
+        case 'er':
+            calculator.erase()
+            break
+        case 'calc':
+            calculator.calc()
+            break
+        default:
+            if (calculator.tela.value == 'Infinity' || calculator.tela.value == 'NaN'|| calculator.tela.value == 'undefined') {
+                calculator.tela.value = x;
+            } else {
+                calculator.tela.value += x;
+            }
+            break
+    }
+    calculator.tela.style.fontSize = `${size}px`
+}
