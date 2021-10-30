@@ -4,7 +4,7 @@
 <p><i>"este projeto foi baseado em um antigo projeto que tinha feito a 1 ano atrás, porém ao contrário deste, o projeto antigo não foi finalizado devido a falta de conhecimento em javascript, hoje manjo mais então decidi refazer 😎"</i></p>
 <hr>
 <h2>⚠️ATENÇÃO⚠️</h2>
-<p> o arquivo <a href="https://github.com/isaias-silva/calculator-web-version/blob/main/script.js">script.js</a> foi <b>obfuscado</b> com ajuda do site <a href="https://obfuscator.io/">obfuscator.io</a>antes de inserido na web se deseja ver o codigo fonte javascript para estudo ou projetos veja o arquivo <a href="https://github.com/isaias-silva/calculator-web-version/blob/main/codigo_fonte.txt">codigo_fonte.txt</a>. </p>
+<p> o arquivo <a href="https://github.com/isaias-silva/calculator-web-version/blob/main/script.js">script.js</a> foi <b>obfuscado</b> com ajuda do site <a href="https://obfuscator.io/">obfuscator.io</a> antes de inserido na web se deseja ver o codigo fonte javascript para estudo ou projetos veja o arquivo <a href="https://github.com/isaias-silva/calculator-web-version/blob/main/codigo_fonte.txt">codigo_fonte.txt</a>. </p>
 <hr>
 <h2>⚙️ funcionalidades ⚙️ </h2>
 <ul>
