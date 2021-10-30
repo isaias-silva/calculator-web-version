@@ -9,7 +9,11 @@ body {
     background-color: black;
     background-size: cover;
 }
-
+h3{color:white;
+font-size: 100px;
+text-align: center;
+text-shadow: 2px 2px 2px black;
+}
 h1 {
     color: yellowgreen
 }
