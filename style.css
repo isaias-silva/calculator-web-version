@@ -9,6 +9,10 @@ body {
     background-color: black;
     background-size: cover;
 }
+body.lovely{
+   animation: go-back 20s infinite;
+    background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/NzsBG49Il/videoblocks-8-bit-looping-hearts-background_bpiv5cwqu_thumbnail-1080_01.png');
+}
 h3{color:white;
 font-size: 100px;
 text-align: center;
@@ -185,4 +189,18 @@ button:active {
     .footer a{right: 50%;}
     .footer a.donate {
         left: 60%;}
+}
+@keyframes go-back {
+    0% {
+        background-position-x: 0%;
+        background-position-y: 0%;
+    }
+    50% {
+        background-position-x: 500%;
+        background-position-y: 500%;
+    }
+    100% {
+        background-position-x: 0%;
+        background-position-y: 0%;
+    }
 }
