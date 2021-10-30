@@ -11,8 +11,13 @@ class Calculadora {
         if(theme=="amor"){
             const music = new Audio('./music/love.mp3');
             music.play();
-        document.body.style.backgroundImage="url('https://t3.ftcdn.net/jpg/02/48/06/52/360_F_248065202_r3vyX7HFCQUN0ilzSirAbk5D1v1ZgyvN.jpg')";
-        this.tela.style.display="none"
+         document.body.style.backgroundImage="url('https://t3.ftcdn.net/jpg/02/48/06/52/360_F_248065202_r3vyX7HFCQUN0ilzSirAbk5D1v1ZgyvN.jpg')";
+         document.getElementById('tela').style.display='none'
+        setTimeout(function(){
+            music.pause()
+            document.body.style.backgroundImage='none'
+            document.getElementById('tela').style.display='block'
+        },60000)
         }
 
     }
